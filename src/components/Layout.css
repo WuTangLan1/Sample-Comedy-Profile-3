@@ -1,0 +1,22 @@
+/* src/components/Layout.css */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+    /* Example responsive styling */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .main-content {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
