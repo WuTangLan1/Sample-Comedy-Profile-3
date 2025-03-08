@@ -3,17 +3,52 @@
 .header {
   background: url('../../public/images/backgrounds/lightHeader.svg') no-repeat center center;
   background-size: cover;
+  transition: background 0.5s ease, color 0.5s ease;
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 0.5rem;
 }
 
+.header.light-mode {
+  background: url('../../public/images/backgrounds/lightHeader.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.header.dark-mode {
+  background: url('../../public/images/backgrounds/darkHeader.svg') no-repeat center center;
+  background-size: cover;
+}
+
 .nav {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  object-fit: cover;
+}
+
+.header.light-mode h1,
+.header.light-mode .nav-link a {
+  color: #333;
+}
+
+.header.dark-mode h1,
+.header.dark-mode .nav-link a {
+  color: #e4e0e0;
 }
 
 .header h1 {
@@ -21,31 +56,17 @@
   margin: 0;
 }
 
-.nav {
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header h1,
-.nav-link a {
-  color: #333;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.3rem;
   margin: 0;
 }
 
 .nav-link a {
   text-decoration: none;
   position: relative;
-  color: #fff;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -62,33 +83,12 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: currentColor;
   transition: width 0.3s ease;
 }
 
 .nav-link a:hover::after {
   width: 100%;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-}
-
-.profile-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  object-fit: cover;
-}
-
-.header h1, .nav-link a {
-  color: #333;
-}
-
-.nav {
-  justify-content: space-between;
 }
 
 .nav-icon {

@@ -2,13 +2,18 @@
 
 import React from 'react';
 import './Header.css';
+import { useState } from 'react';
 import InfoIcon from '@mui/icons-material/Info';
 import EventIcon from '@mui/icons-material/Event';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 const Header: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(true);
+  const handleToggle = () => setDarkMode(prev => !prev);
   return (
-    <header className="header">
+    <header className={`header ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <nav className="nav">
         <div className="brand">
           <img src="/images/profile_photos/profile1.png" alt="Profile" className="profile-image" />
@@ -33,8 +38,15 @@ const Header: React.FC = () => {
               <span className="nav-icon"><ContactMailIcon /></span>
             </a>
           </li>
+          <li className="nav-link" onClick={handleToggle}>
+            <a href="#toggle">
+              <span className="nav-text">Toggle Mode</span>
+              <span className="nav-icon">
+                {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+              </span>
+            </a>
+          </li>
         </ul>
-
       </nav>
     </header>
   );
