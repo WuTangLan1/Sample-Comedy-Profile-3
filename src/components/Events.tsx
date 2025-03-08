@@ -12,7 +12,7 @@ const Events: React.FC = () => {
       time: '7:00 PM',
       venue: 'The Comedy Cellar, New York',
       website: 'https://citizenkanenyc.example.com',
-      tickets: 'https://tickets.example.com/citizenkanenyc',
+      tickets: 'https://tickets.example.com/citizenkaneNYC',
       description: 'Join Citizen Kane for an unforgettable night of stand-up comedy in the heart of NYC.',
       image: '/images/event_photos/event1.png'
     },
@@ -87,7 +87,6 @@ const Events: React.FC = () => {
             id={`event-${index}`}
             key={index}
             variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
-            whileHover={{ scale: 1.05 }}
           >
             <div className="event-content">
               <img src={event.image} alt={event.title} className="event-image" />
@@ -97,8 +96,8 @@ const Events: React.FC = () => {
               <p>{event.description}</p>
               <p className="event-extra">Expect guest appearances and behind-the-scenes stories!</p>
               <div className="event-links">
-                <a href={event.website} target="_blank" rel="noopener noreferrer">Official Site</a>
-                <a href={event.tickets} target="_blank" rel="noopener noreferrer">Buy Tickets</a>
+                <a href={event.website} target="_blank" rel="noopener noreferrer" className="event-link site-link">Official Site</a>
+                <a href={event.tickets} target="_blank" rel="noopener noreferrer" className="event-link tickets-link">Buy Tickets</a>
               </div>
             </div>
           </motion.li>
