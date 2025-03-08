@@ -92,15 +92,12 @@
 }
 
 .nav-icon {
-  display: none;
+  display: inline-flex;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 600px) {
   .nav-text {
     display: none;
-  }
-  .nav-icon {
-    display: inline-flex;
-    font-size: 1.5rem;
   }
 }

@@ -4,6 +4,7 @@
   color: #fff;
   padding: 2rem;
   border-radius: 8px;
+  margin: 0 auto;
 }
 
 .events h2 {
@@ -22,18 +23,14 @@
   list-style: none;
 }
 
-.events {
-  margin: 0 auto;
-}
-
 .event-item {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #555, #333);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-item:hover {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .event-content {
