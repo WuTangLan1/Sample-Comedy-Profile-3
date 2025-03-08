@@ -6,7 +6,7 @@ import './NextEvent.css';
 
 const NextEvent: React.FC = () => {
   const { darkMode } = useThemeContext();
-  const targetDate = new Date('November 10, 2025 19:00:00').getTime();
+  const targetDate = new Date('June 10, 2025 19:00:00').getTime();
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   useEffect(() => {
     const updateCountdown = () => {

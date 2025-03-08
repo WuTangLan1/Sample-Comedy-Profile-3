@@ -8,7 +8,7 @@ const Events: React.FC = () => {
   const eventsData = [
     {
       title: 'Citizen Kane Live at The Comedy Cellar',
-      date: 'November 10, 2025',
+      date: 'June 10, 2025',
       time: '7:00 PM',
       venue: 'The Comedy Cellar, New York',
       website: 'https://citizenkanenyc.example.com',
@@ -18,7 +18,7 @@ const Events: React.FC = () => {
     },
     {
       title: 'Citizen Kane Special - Night of Laughs',
-      date: 'December 5, 2025',
+      date: 'July 5, 2025',
       time: '8:30 PM',
       venue: 'Laugh Factory, Los Angeles',
       website: 'https://citizenkaneLA.example.com',
@@ -28,7 +28,7 @@ const Events: React.FC = () => {
     },
     {
       title: 'Holiday Comedy Bash with Citizen Kane',
-      date: 'December 20, 2025',
+      date: 'August 20, 2025',
       time: '9:00 PM',
       venue: 'Punch Line, San Francisco',
       website: 'https://holidaycomedybash.example.com',
@@ -38,7 +38,7 @@ const Events: React.FC = () => {
     },
     {
       title: 'Citizen Kane New Year Extravaganza',
-      date: 'January 1, 2026',
+      date: 'August 1, 2026',
       time: '10:00 PM',
       venue: 'Gotham Comedy Club, New York',
       website: 'https://citizenkanenewyear.example.com',
