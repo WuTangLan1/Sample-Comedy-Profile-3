@@ -21,7 +21,7 @@ const Header: React.FC = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
     sections.forEach(sec => observer.observe(sec));
     return () => sections.forEach(sec => observer.unobserve(sec));

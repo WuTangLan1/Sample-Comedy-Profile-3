@@ -6,7 +6,7 @@ import './Contact.css';
 const Contact: React.FC = () => {
   const { darkMode } = useThemeContext();
   return (
-    <section className={`contact-section ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+    <section id="contact" className={`contact-section ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <h2>Contact Citizen Kane</h2>
       <form className="contact-form">
         <div className="form-row">

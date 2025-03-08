@@ -6,7 +6,7 @@ import './About.css';
 const About: React.FC = () => {
   const { darkMode } = useThemeContext();
   return (
-    <section className={`about-section ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+    <section id="about" className={`about-section ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <img src="/images/profile_photos/profile1.png" alt="Profile" className="about-image" />
       <h1>About Citizen Kane</h1>
       <p>Citizen Kane is a rising comedy sensation known for sharp wit, engaging storytelling, and unforgettable performances.</p>
