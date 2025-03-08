@@ -8,35 +8,38 @@
   margin: 2rem auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: background 0.5s ease, background-color 0.5s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 .light-mode.next-event {
-  background: url('../../public/images/backgrounds/lightCountdown.svg') no-repeat center center;
+  background: url('../../public/images/backgrounds/lightCard.svg') no-repeat center center;
   background-size: cover;
   color: #000;
 }
 .dark-mode.next-event {
-  background: url('../../public/images/backgrounds/darkCountdown.svg') no-repeat center center;
+  background: url('../../public/images/backgrounds/darkCard.svg') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
 .countdown-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   text-align: center;
 }
 .countdown-display {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 .time-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
+  min-width: 120px;
 }
 .time-box span {
   font-size: 3rem;
@@ -45,7 +48,7 @@
 .see-live-btn {
   background-color: #4a90e2;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 1rem 2rem;
   border-radius: 6px;
   border: none;
@@ -65,10 +68,12 @@
     font-size: 1.8rem;
   }
   .countdown-display {
-    gap: 1rem;
+    gap: 0.5rem;
   }
   .time-box {
     font-size: 1.5rem;
+    min-width: 45%;
+    text-align: center;
   }
   .time-box span {
     font-size: 2.5rem;
