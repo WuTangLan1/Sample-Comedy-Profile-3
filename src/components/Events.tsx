@@ -38,7 +38,7 @@ const Events: React.FC = () => {
     },
     {
       title: 'Citizen Kane New Year Extravaganza',
-      date: 'August 1, 2026',
+      date: 'Septmeber 1, 2026',
       time: '10:00 PM',
       venue: 'Gotham Comedy Club, New York',
       website: 'https://citizenkanenewyear.example.com',
