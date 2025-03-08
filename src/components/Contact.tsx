@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useThemeContext } from '../contexts/ThemeContext';
 import './Contact.css';
 import ContactSuccess from './ContactSuccess';
+import OptimizedImage from './OptimizedImage';
 
 const Contact: React.FC = () => {
   const { darkMode } = useThemeContext();
@@ -61,7 +62,9 @@ const Contact: React.FC = () => {
           <div className="input-wrapper">
             <span className="input-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path fill="currentColor" d="M22 12a10 10 0 10-11.63 9.87v-6.99H8v-2.88h2.37V9.84c0-2.33 1.38-3.62 3.5-3.62.99 0 2.03.18 2.03.18v2.24h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.88h-2.1v6.99A10 10 0 0022 12z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="currentColor" d="M22 12a10 10 0 10-11.63 9.87v-6.99H8v-2.88h2.37V9.84c0-2.33 1.38-3.62 3.5-3.62.99 0 2.03.18 2.03.18v2.24h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.88h-2.1v6.99A10 10 0 0022 12z"/>
+                </svg>
               </svg>
             </span>
             <input type="url" placeholder="Facebook Profile URL" />
@@ -69,7 +72,9 @@ const Contact: React.FC = () => {
           <div className="input-wrapper">
             <span className="input-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4v16h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.7-1.8 3.5-1.8 3.8 0 4.5 2.5 4.5 5.8V24h-4v-8.6c0-2.1-.04-4.8-2.9-4.8-2.9 0-3.3 2.3-3.3 4.6V24h-4V8z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4v16h-4V8zm7 0h3.8v2.2h.1c.5-.9 1.7-1.8 3.5-1.8 3.8 0 4.5 2.5 4.5 5.8V24h-4v-8.6c0-2.1-.04-4.8-2.9-4.8-2.9 0-3.3 2.3-3.3 4.6V24h-4V8z"/>
+                </svg>
               </svg>
             </span>
             <input type="url" placeholder="LinkedIn Profile URL" />
@@ -107,30 +112,30 @@ const Contact: React.FC = () => {
       {showModal && <ContactSuccess onClose={() => setShowModal(false)} />}
       <div className="contact-image-scroller">
         <div className="contact-image-track">
-          <img src="/images/profile_photos/profile2.png" alt="Profile 2" />
-          <img src="/images/profile_photos/profile3.png" alt="Profile 3" />
-          <img src="/images/profile_photos/profile4.png" alt="Profile 4" />
-          <img src="/images/profile_photos/profile5.png" alt="Profile 5" />
-          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2" />
+          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3" />
+          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4" />
+          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5" />
+          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
         </div>
       </div>
     </section>
