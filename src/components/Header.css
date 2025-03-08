@@ -82,6 +82,11 @@
   transition: color 0.3s ease;
 }
 
+.nav-link.active a {
+  font-weight: 700;
+  color: #4a90e2;
+}
+
 .nav-link a:hover {
   color: #e0e0e0;
 }

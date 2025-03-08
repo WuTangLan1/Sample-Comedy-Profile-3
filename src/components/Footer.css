@@ -30,6 +30,7 @@
 }
 .footer-link {
   position: relative;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   transition: color 0.3s ease;
@@ -41,11 +42,21 @@
   width: 1.5rem;
   height: 1.5rem;
 }
-.footer-text {
+.footer.light-mode .footer-text {
+  text-decoration: none;
   margin-left: 0.5rem;
+  color: #333;
   font-size: 1rem;
   font-weight: 600;
 }
+.footer.dark-mode .footer-text {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .footer-link::after {
   content: "";
   position: absolute;

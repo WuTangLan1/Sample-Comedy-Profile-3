@@ -1,5 +1,4 @@
-// src/Header.tsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import InfoIcon from '@mui/icons-material/Info';
 import EventIcon from '@mui/icons-material/Event';
@@ -10,6 +9,32 @@ import { useThemeContext } from '../contexts/ThemeContext';
 
 const Header: React.FC = () => {
   const { darkMode, toggleDarkMode } = useThemeContext();
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section[id]');
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    sections.forEach(sec => observer.observe(sec));
+    return () => sections.forEach(sec => observer.unobserve(sec));
+  }, []);
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={`header ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <nav className="nav">
@@ -18,20 +43,20 @@ const Header: React.FC = () => {
           <h1>Citizen Kane</h1>
         </div>
         <ul className="nav-links">
-          <li className="nav-link">
-            <a href="#events">
-            <span className="nav-icon"><EventIcon /></span>
+          <li className={`nav-link ${activeSection === 'events' ? 'active' : ''}`}>
+            <a href="#events" onClick={(e) => handleSmoothScroll(e, 'events')}>
+              <span className="nav-icon"><EventIcon /></span>
               <span className="nav-text">Events</span>
             </a>
           </li>
-          <li className="nav-link">
-            <a href="#about">
-            <span className="nav-icon"><InfoIcon /></span>
+          <li className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
+            <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')}>
+              <span className="nav-icon"><InfoIcon /></span>
               <span className="nav-text">About</span>
             </a>
           </li>
-          <li className="nav-link">
-            <a href="#contact">
+          <li className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}>
+            <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')}>
               <span className="nav-icon"><ContactMailIcon /></span>
               <span className="nav-text">Get in Touch</span>
             </a>
