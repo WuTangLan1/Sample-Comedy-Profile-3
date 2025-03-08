@@ -38,11 +38,11 @@ const Events: React.FC = () => {
     },
     {
       title: 'Citizen Kane New Year Extravaganza',
-      date: 'Septmeber 1, 2026',
+      date: 'September 1, 2026',
       time: '10:00 PM',
       venue: 'Gotham Comedy Club, New York',
       website: 'https://citizenkanenewyear.example.com',
-      tickets: 'https://tickets.example.com/citizenkanenewyear',
+      tickets: 'https://tickets.example.com/citizenkaneNewYear',
       description: 'Ring in the new year with Citizen Kane and a night of uproarious laughter.',
       image: '/images/event_photos/event4.png'
     },
@@ -54,6 +54,16 @@ const Events: React.FC = () => {
       website: 'https://citizenkaneinttour.example.com',
       tickets: 'https://tickets.example.com/citizenkaneinttour',
       description: 'Witness the start of Citizen Kane’s international tour with a show packed with surprises.',
+      image: '/images/event_photos/event5.png'
+    },
+    {
+      title: 'Citizen Kane Encore Night',
+      date: 'March 10, 2026',
+      time: '7:30 PM',
+      venue: 'Apollo Theater, Chicago',
+      website: 'https://citizenkaneencore.example.com',
+      tickets: 'https://tickets.example.com/citizenkaneEncore',
+      description: 'One more special night of comedic genius, featuring brand-new stories and a few surprise guests.',
       image: '/images/event_photos/event5.png'
     }
   ];

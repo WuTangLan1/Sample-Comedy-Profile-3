@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { useThemeContext } from '../contexts/ThemeContext';
 import './Contact.css';
 import ContactSuccess from './ContactSuccess';
-import OptimizedImage from './OptimizedImage';
 
 const Contact: React.FC = () => {
   const { darkMode } = useThemeContext();
@@ -112,30 +111,30 @@ const Contact: React.FC = () => {
       {showModal && <ContactSuccess onClose={() => setShowModal(false)} />}
       <div className="contact-image-scroller">
         <div className="contact-image-track">
-          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2" />
-          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3" />
-          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4" />
-          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5" />
-          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
-          <OptimizedImage src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src={`${process.env.PUBLIC_URL}/images/profile_photos/profile2.png`} alt="Profile 2" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
         </div>
       </div>
     </section>
