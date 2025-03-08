@@ -70,6 +70,8 @@ const NextEvent: React.FC = () => {
       <motion.button
         className="see-live-btn"
         onClick={scrollToNextEvent}
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 1, ease: 'easeInOut', repeat: Infinity }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
