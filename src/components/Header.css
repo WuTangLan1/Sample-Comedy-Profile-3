@@ -1,17 +1,15 @@
 /* src\components\Header.css */
 
 .header {
-  width: 100%;
   background: url('../../public/images/backgrounds/lightHeader.svg') no-repeat center center;
   background-size: cover;
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .nav {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -19,9 +17,21 @@
 }
 
 .header h1 {
-  color: #fff;
   font-size: 1.5rem;
   margin: 0;
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1,
+.nav-link a {
+  color: #333;
 }
 
 .nav-links {
@@ -58,4 +68,39 @@
 
 .nav-link a:hover::after {
   width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  object-fit: cover;
+}
+
+.header h1, .nav-link a {
+  color: #333;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav-text {
+    display: none;
+  }
+  .nav-icon {
+    display: inline-flex;
+    font-size: 1.5rem;
+  }
 }

@@ -22,11 +22,42 @@
   list-style: none;
 }
 
+.events {
+  margin: 0 auto;
+}
+
 .event-item {
-  background-color: #555;
-  border-radius: 8px;
-  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #555, #333);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.event-item:hover .event-image {
+  transform: scale(1.02);
+}
+
+.event-extra {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #ccc;
 }
 
 .event-item h3 {

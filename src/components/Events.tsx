@@ -79,21 +79,23 @@ const Events: React.FC = () => {
           <motion.li
             className="event-item"
             key={index}
-            variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: { opacity: 1, y: 0 }
-            }}
+            variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
             whileHover={{ scale: 1.05 }}
           >
-            <h3>{event.title}</h3>
-            <p>{event.date} | {event.time}</p>
-            <p>{event.venue}</p>
-            <p>{event.description}</p>
-            <div className="event-links">
-              <a href={event.website} target="_blank" rel="noopener noreferrer">Official Site</a>
-              <a href={event.tickets} target="_blank" rel="noopener noreferrer">Buy Tickets</a>
+            <div className="event-content">
+              <img src="path/to/placeholder.jpg" alt={event.title} className="event-image" />
+              <h3>{event.title}</h3>
+              <p>{event.date} | {event.time}</p>
+              <p>{event.venue}</p>
+              <p>{event.description}</p>
+              <p className="event-extra">Expect guest appearances and behind-the-scenes stories!</p>
+              <div className="event-links">
+                <a href={event.website} target="_blank" rel="noopener noreferrer">Official Site</a>
+                <a href={event.tickets} target="_blank" rel="noopener noreferrer">Buy Tickets</a>
+              </div>
             </div>
           </motion.li>
+
         ))}
       </motion.ul>
     </motion.section>

@@ -73,6 +73,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: 'none',
+          width: '100%',
           borderRadius: 8,
           padding: '10px 20px',
           transition: 'all 0.3s ease-in-out',

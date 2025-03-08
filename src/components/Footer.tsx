@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} My React App. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Citizen Kane. All rights reserved.</p>
     </footer>
   );
 };
