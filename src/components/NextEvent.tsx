@@ -1,12 +1,13 @@
 // src/components/NextEvent.tsx
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useThemeContext } from '../contexts/ThemeContext';
 import './NextEvent.css';
 
 const NextEvent: React.FC = () => {
+  const { darkMode } = useThemeContext();
   const targetDate = new Date('November 10, 2025 19:00:00').getTime();
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
   useEffect(() => {
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -25,17 +26,15 @@ const NextEvent: React.FC = () => {
     const timer = setInterval(updateCountdown, 1000);
     return () => clearInterval(timer);
   }, [targetDate]);
-
   const scrollToNextEvent = () => {
     const nextEventElement = document.getElementById('event-0');
     if (nextEventElement) {
       nextEventElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
   return (
     <motion.div
-      className="next-event"
+      className={`next-event ${darkMode ? 'dark-mode' : 'light-mode'}`}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }}
     >

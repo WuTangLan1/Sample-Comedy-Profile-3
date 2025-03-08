@@ -1,76 +1,76 @@
 /* src/components/NextEvent.css */
 .next-event {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(135deg, #222, #111);
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 2rem auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: background 0.5s ease, background-color 0.5s ease;
+}
+.light-mode.next-event {
+  background: url('../../public/images/backgrounds/lightCountdown.svg') no-repeat center center;
+  background-size: cover;
+  color: #000;
+}
+.dark-mode.next-event {
+  background: url('../../public/images/backgrounds/darkCountdown.svg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.countdown-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.countdown-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+.time-box span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.see-live-btn {
+  background-color: #4a90e2;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+.see-live-btn:hover {
+  background-color: #82b0f5;
+}
+@media screen and (max-width: 600px) {
+  .next-event {
+    margin: 1rem;
+    padding: 1.5rem;
   }
-  
   .countdown-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
+    font-size: 1.8rem;
   }
-  
   .countdown-display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    gap: 2rem;
+    gap: 1rem;
   }
-  
   .time-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2rem;
-    color: #fff;
+    font-size: 1.5rem;
   }
-  
   .time-box span {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.5rem;
   }
-  
-  .see-live-btn {
-    background-color: #4a90e2;
-    color: #fff;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-  }
-  
-  .see-live-btn:hover {
-    background-color: #82b0f5;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .next-event {
-      margin: 1rem;
-      padding: 1.5rem;
-    }
-    .countdown-title {
-      font-size: 1.5rem;
-    }
-    .countdown-display {
-      gap: 1rem;
-    }
-    .time-box {
-      font-size: 1.3rem;
-    }
-    .time-box span {
-      font-size: 2rem;
-    }
-  }
-  
+}
