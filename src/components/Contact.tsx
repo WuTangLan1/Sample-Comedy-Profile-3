@@ -105,11 +105,33 @@ const Contact: React.FC = () => {
         </div>
       </form>
       {showModal && <ContactSuccess onClose={() => setShowModal(false)} />}
-      <div className="contact-profile-images">
-        <img src="/images/profile_photos/profile2.png" alt="Profile 2" />
-        <img src="/images/profile_photos/profile3.png" alt="Profile 3" />
-        <img src="/images/profile_photos/profile4.png" alt="Profile 4" />
-        <img src="/images/profile_photos/profile5.png" alt="Profile 5" />
+      <div className="contact-image-scroller">
+        <div className="contact-image-track">
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+          <img src="/images/profile_photos/profile2.png" alt="Profile 2 Duplicate" />
+          <img src="/images/profile_photos/profile3.png" alt="Profile 3 Duplicate" />
+          <img src="/images/profile_photos/profile4.png" alt="Profile 4 Duplicate" />
+          <img src="/images/profile_photos/profile5.png" alt="Profile 5 Duplicate" />
+        </div>
       </div>
     </section>
   );
