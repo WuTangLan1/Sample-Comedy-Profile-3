@@ -1,7 +1,6 @@
 // src/theme.ts
 import { createTheme } from '@mui/material/styles';
 
-// Extend the MUI theme to include custom animations
 declare module '@mui/material/styles' {
   interface Theme {
     customAnimations: {
@@ -73,7 +72,6 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: 'none',
-          width: '100%',
           borderRadius: 8,
           padding: '10px 20px',
           transition: 'all 0.3s ease-in-out',
@@ -84,7 +82,6 @@ const theme = createTheme({
         }
       }
     },
-    // Other component overrides (MuiAppBar, MuiCard, etc.) go here...
   },
   customAnimations: {
     fadeIn: { initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.6, ease: 'easeInOut' } } },

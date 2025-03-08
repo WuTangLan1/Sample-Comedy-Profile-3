@@ -2,9 +2,9 @@
 .events {
   background-color: #444;
   color: #fff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .events h2 {
