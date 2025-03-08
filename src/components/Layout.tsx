@@ -3,6 +3,8 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Events from './Events';
+import About from './About';
+import Contact from './Contact';
 import './Layout.css';
 import { useThemeContext } from '../contexts/ThemeContext';
 
@@ -18,6 +20,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <main className="main-content">
         {children}
         <Events />
+        <About />
+        <Contact />
       </main>
       <Footer />
     </div>
