@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <h1>My React App</h1>
+        <h1>Citizen Kane</h1>
         <ul className="nav-links">
           <li className="nav-link"><a href="#about">About</a></li>
           <li className="nav-link"><a href="#events">Events</a></li>
