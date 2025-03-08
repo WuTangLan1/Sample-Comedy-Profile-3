@@ -1,1 +1,26 @@
-/* src\components\About.css */
+/* src/components/About.css */
+.about-section {
+    padding: 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .dark-mode.about-section {
+    background-color: #1d1d1d;
+    color: #fff;
+  }
+  
+  .light-mode.about-section {
+    background-color: #f7f7f7;
+    color: #000;
+  }
+  
+  .about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
