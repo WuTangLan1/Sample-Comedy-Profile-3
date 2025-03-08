@@ -1,23 +1,75 @@
-/* src\components\Events.css */
-
+/* src/components/Events.css */
 .events {
-    background-color: #444;
-    color: #fff;
+  background-color: #444;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.events h2 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.events-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-item {
+  background-color: #555;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.event-item p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.event-links {
+  margin-top: 1rem;
+}
+
+.event-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.event-links a:hover {
+  color: #82b0f5;
+}
+
+@media screen and (max-width: 600px) {
+  .events {
     padding: 1rem;
-    border-radius: 8px;
   }
-  
   .events h2 {
-    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
   }
-  
-  .events ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .event-item {
+    padding: 1rem;
   }
-  
-  .events li {
-    margin-bottom: 0.5rem;
+  .event-item h3 {
+    font-size: 1.1rem;
   }
-  
+  .event-item p {
+    font-size: 0.9rem;
+  }
+}

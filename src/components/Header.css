@@ -1,25 +1,61 @@
 /* src\components\Header.css */
 
 .header {
-    width: 100%;
-    background-color: #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 1rem;
-  }
-  
-  .nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header h1 {
-    color: #fff;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
+  width: 100%;
+  background: url('../../public/images/backgrounds/lightHeader.svg') no-repeat center center;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-link a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link a:hover {
+  color: #e0e0e0;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+}
