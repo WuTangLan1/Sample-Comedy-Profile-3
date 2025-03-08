@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           <li className="nav-link" onClick={toggleDarkMode}>
             <a href="#toggle">
               <span className="nav-icon">{darkMode ? <Brightness7Icon /> : <Brightness4Icon />}</span>
-              <span className="nav-text">Toggle</span>
+              <span className="nav-text">{darkMode ? 'Light' : 'Dark'}</span>
             </a>
           </li>
         </ul>
