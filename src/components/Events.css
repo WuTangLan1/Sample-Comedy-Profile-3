@@ -1,1 +1,23 @@
 /* src\components\Events.css */
+
+.events {
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .events h2 {
+    margin: 0 0 1rem 0;
+  }
+  
+  .events ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .events li {
+    margin-bottom: 0.5rem;
+  }
+  

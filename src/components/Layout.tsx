@@ -3,12 +3,11 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Events from './Events';
-
 import './Layout.css';
 
 interface LayoutProps {
-    children?: React.ReactNode;
-  }
+  children?: React.ReactNode;
+}
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (

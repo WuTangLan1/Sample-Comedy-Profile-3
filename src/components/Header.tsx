@@ -1,4 +1,5 @@
 // src/components/Header.tsx
+
 import React from 'react';
 import './Header.css';
 
@@ -7,7 +8,6 @@ const Header: React.FC = () => {
     <header className="header">
       <nav className="nav">
         <h1>My React App</h1>
-        {/* You can add more navigation links here */}
       </nav>
     </header>
   );
