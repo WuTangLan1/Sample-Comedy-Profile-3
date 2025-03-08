@@ -1,5 +1,18 @@
 /* src/components/Contact.css */
+.light-mode.contact-section {
+    background: url('../../public/images/backgrounds/lightHeader.svg') no-repeat center center;
+    background-size: cover;
+    color: #000;
+}
+    
+.dark-mode.contact-section {
+    background: url('../../public/images/backgrounds/darkHeader.svg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
 .contact-section {
+    transition: background 0.5s ease, background-color 0.5s ease;
     padding: 2rem;
     border-radius: 8px;
     margin: 0 auto;
