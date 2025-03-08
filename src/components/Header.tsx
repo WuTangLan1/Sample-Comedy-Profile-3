@@ -19,27 +19,27 @@ const Header: React.FC = () => {
         </div>
         <ul className="nav-links">
           <li className="nav-link">
-            <a href="#about">
-              <span className="nav-text">About</span>
-              <span className="nav-icon"><InfoIcon /></span>
+            <a href="#events">
+            <span className="nav-icon"><EventIcon /></span>
+              <span className="nav-text">Events</span>
             </a>
           </li>
           <li className="nav-link">
-            <a href="#events">
-              <span className="nav-text">Events</span>
-              <span className="nav-icon"><EventIcon /></span>
+            <a href="#about">
+            <span className="nav-icon"><InfoIcon /></span>
+              <span className="nav-text">About</span>
             </a>
           </li>
           <li className="nav-link">
             <a href="#contact">
-              <span className="nav-text">Get in Touch</span>
               <span className="nav-icon"><ContactMailIcon /></span>
+              <span className="nav-text">Get in Touch</span>
             </a>
           </li>
           <li className="nav-link" onClick={toggleDarkMode}>
             <a href="#toggle">
-              <span className="nav-text">Toggle</span>
               <span className="nav-icon">{darkMode ? <Brightness7Icon /> : <Brightness4Icon />}</span>
+              <span className="nav-text">Toggle</span>
             </a>
           </li>
         </ul>

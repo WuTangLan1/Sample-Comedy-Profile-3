@@ -62,9 +62,20 @@
   align-items: center;
   gap: 1.3rem;
   margin: 0;
+  padding-right: 2rem;
+}
+
+@media(max-width : 650px)
+{
+  .nav-links {
+    padding-right : 0.5rem;
+  }
 }
 
 .nav-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   position: relative;
   font-weight: 500;
